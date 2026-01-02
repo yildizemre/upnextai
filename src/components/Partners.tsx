@@ -2,8 +2,7 @@ import { Handshake } from 'lucide-react';
 
 export default function Partners() {
   const partners = [
-    { name: 'JCI', role: 'Destekçi Kuruluş' },
-    { name: 'AHK', role: 'Destekçi Kuruluş' }
+    { name: 'Tech Leaders Türkiye', role: 'Destekçi Kuruluş', logo: '/image.png' }
   ];
 
   return (
@@ -28,8 +27,12 @@ export default function Partners() {
               key={index}
               className="bg-gradient-to-br from-[#5B8CFF]/10 to-transparent border border-[#5B8CFF]/30 rounded-2xl p-6 md:p-8 hover:border-[#5B8CFF]/60 hover:shadow-xl hover:shadow-[#5B8CFF]/20 transition-all duration-300 w-40 sm:w-48 md:min-w-[200px] text-center group"
             >
-              <div className="bg-white/5 w-20 h-20 md:w-24 md:h-24 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-white/10 transition">
-                <span className="text-[#5B8CFF] text-2xl md:text-3xl font-bold">{partner.name}</span>
+              <div className="bg-white w-20 h-20 md:w-24 md:h-24 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:shadow-lg transition p-2">
+                {partner.logo ? (
+                  <img src={partner.logo} alt={partner.name} className="w-full h-full object-contain" />
+                ) : (
+                  <span className="text-[#5B8CFF] text-2xl md:text-3xl font-bold">{partner.name}</span>
+                )}
               </div>
               <p className="text-gray-600 text-sm">{partner.role}</p>
             </div>
@@ -38,7 +41,7 @@ export default function Partners() {
 
         <div className="mt-12 text-center">
           <p className="text-gray-600 text-sm">
-            JCI, AHK ve benzeri prestijli kurumsal dernekler UpNext AI'ı desteklemektedir
+            Tech Leaders Türkiye ve benzeri prestijli kurumsal dernekler UpNext AI'ı desteklemektedir
           </p>
         </div>
       </div>

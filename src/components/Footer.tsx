@@ -1,3 +1,5 @@
+import { Linkedin, Instagram } from 'lucide-react';
+
 export default function Footer() {
   return (
     <footer className="bg-[#f8f9fa] border-t border-[#5B8CFF]/20 py-8">
@@ -8,6 +10,25 @@ export default function Footer() {
               UpNext <span className="text-[#5B8CFF]">AI</span>
             </span>
             <p className="text-gray-600 text-sm mt-2">Your Next Level Starts Here.</p>
+          </div>
+
+          <div className="flex items-center space-x-6">
+            <a
+              href="https://www.linkedin.com/company/upnextai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-[#5B8CFF] transition"
+            >
+              <Linkedin className="w-6 h-6" />
+            </a>
+            <a
+              href="https://www.instagram.com/upnextai_tr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-[#5B8CFF] transition"
+            >
+              <Instagram className="w-6 h-6" />
+            </a>
           </div>
 
           <div className="text-gray-600 text-sm text-center">
