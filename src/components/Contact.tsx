@@ -48,7 +48,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://instagram.com/upnextai"
+            href="https://www.instagram.com/upnextai_tr"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-br from-[#5B8CFF]/10 to-transparent border border-[#5B8CFF]/30 rounded-2xl p-8 hover:border-[#5B8CFF]/60 hover:shadow-xl hover:shadow-[#5B8CFF]/20 transition-all duration-300 group"
@@ -59,7 +59,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Instagram</h3>
-                <p className="text-gray-600">@upnextai</p>
+                <p className="text-gray-600">@upnextai_tr</p>
               </div>
             </div>
           </a>
